@@ -8,7 +8,7 @@ This project is an end-to-end Data Analytics solution designed to uncover the ro
 ## 🏗️ Data Architecture & ETL
 The raw data contained several anomalies (negative ADR, zero-night stays, impossible occupancies). I utilized **Power Query** to cleanse the data and architected an optimized **Star Schema**:
 * **Fact Table:** `Fact_Bookings` (containing numeric KPIs and foreign keys).
-* **Dimension Tables:** `Dim_Date`, `Dim_Hotel`, `Dim_Geography`, `Dim_Market`, and a consolidated "Junk Dimension" `Dim_BookingAttributes`.
+* **Dimension Tables:** `Dim_Date`, `Dim_Geography`, `Dim_Market`, and a consolidated "Junk Dimension" `Dim_BookingAttributes`.
 
 ![Data Model](model.png)
 
